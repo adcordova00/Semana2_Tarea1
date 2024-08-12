@@ -12,10 +12,15 @@ namespace Semana2_Tarea1.Controllers
     {
         private PaisesModel paisesModel = new PaisesModel();
 
-        public DataTable Paises() { 
-            DataTable listaPaises = new DataTable();
+        public List<PaisesModel> Paises() {
+            List<PaisesModel> listaPaises = new List<PaisesModel>();
             listaPaises = paisesModel.Paises();
             return listaPaises;
-        } 
+        }
+        public string insertar(PaisesModel pais)
+        {
+            string guardar_pais = paisesModel.insertar(pais);
+            return guardar_pais;
+        }
     }
 }

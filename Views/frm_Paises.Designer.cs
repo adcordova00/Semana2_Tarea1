@@ -46,6 +46,7 @@
             btn_grabar.TabIndex = 0;
             btn_grabar.Text = "Grabar";
             btn_grabar.UseVisualStyleBackColor = true;
+            btn_grabar.Click += btn_grabar_Click;
             // 
             // btn_editar
             // 
